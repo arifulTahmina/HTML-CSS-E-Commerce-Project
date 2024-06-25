@@ -1,0 +1,450 @@
+/* reset code and common starts here CSS_ecommerce_project */
+:root {
+    --primary-color:rgb(11, 181, 48);
+    --secondary-color:rgba(36, 122, 55, .9);
+    --padding:0.5rem;
+    --transition: all 0.3s;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.5) ;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-space-around{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+.btn:hover{
+   background-color: var(--secondary-color);
+}
+.cart{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    transition:var(--transition);
+}
+.cart:hover{
+    box-shadow: 0.3rem 0.2rem 0.8rem rgba(205, 202, 202, 1) ;
+}
+.hr-design{
+    margin: 0.5rem 0;
+}
+.dot{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+.grey{
+    background-color: grey;
+}
+
+/* reset code and common starts here CSS_ecommerce_project */
+
+/* navbar starts here  */
+#menu-icon{
+    display: none;
+}
+nav {
+    font-family:sans-serif;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav-upper{
+    padding: 1rem 0;
+    min-height: 10vh;
+    background-color: var(--primary-color);
+
+}
+.nav-list{
+    transition: var(--transition);
+}
+.nav-list:hover {
+    text-decoration: overline 2px;
+    color: black;
+}
+.nav-link {
+    color: white;
+    transition: var(--transition);
+}
+.nav-link:hover {
+    color: black;
+}
+.prifile-icon {
+    width: 3rem;
+    height:3rem;
+    background-color:skyblue;
+    border-radius: 50%;
+    border: white 2px solid;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.prifile-icon:hover {
+    filter: saturate(1);
+}
+.nav-lower {
+    background-color: var(--secondary-color);
+    min-height: 10vh;
+    font-weight: bold;
+    padding:1rem 0;
+}
+.nav-brand {
+    font-size: 2rem;
+    font-family:cursive;
+}
+
+/* navbar ends here  */
+
+/* header starts here  */
+
+.header{
+    padding:4rem 0 ;
+    height: 80vh;
+    background: url(images/markus-spiske-k0rVudBoB4c-unsplash.jpg) no-repeat center;
+    background-attachment:scroll;
+    background-size: cover;
+}
+.banner{
+    width:100%;
+    height: 100%;
+    flex-direction: column;
+}
+.banner-title {
+    font-size: 4rem;
+    color:var(--primary-color);
+    padding: 1rem;
+    border-radius:var(--border-radius);
+}
+.features{
+    width: 100%;
+    position: static;
+    z-index: 10;
+}
+.feature{
+    background-color: rgba(80, 160, 78, 0.7 );
+    color: white;
+    padding: 1rem;
+    border-radius:0.6rem;    width: 15rem;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+}
+.feature h3{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.feature-icon{
+    font-size: 3rem;
+}
+/* header ends here  */
+/* main starts here  */
+main{
+    padding:4rem 0;
+    min-height: 80vh;
+}
+.sidebar{
+    flex: 1;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.main-contant{
+    flex: 3;
+    padding: var(--padding);
+}
+.actions-sort select{
+    padding: var(--padding);
+}
+.actions-search input{
+    padding: var(--padding);
+    width: 15rem;
+}
+.actions-search button{
+    margin-left: -.50rem;
+    margin-bottom:-5px;
+    height:35.6px ;
+    border: 1px solid;
+    
+}
+/* product sectoin starts here  */
+.products{
+    display: grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.product {
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:var(--primary-color);
+    color: white;
+    padding:8px 8px ;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 10;
+    
+}
+.product-img{
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.product-img:hover{
+    filter: saturate(1);
+}
+.product-body{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.learn-more{
+    color: green;
+}
+/* product sectoin starts here  */
+/* pagination section starts here  */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-btn{
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+}
+.pagination-btn:first-child{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+/* pagination section ends here  */
+/* proudec section starts here  */
+.proudect-details-left{
+    flex: 1;
+}
+.proudect-details-left img{
+    width:35rem;
+    height:25rem;
+    border-radius: 6px;
+}
+.product-name{
+
+    font-family:'Courier New', Courier, monospace;
+}
+.proudect-details-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+/* proudec section starts here  */
+/* cart section starts here  */
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+}
+.cart .cart{
+    margin-bottom: 1rem;
+}
+.cart__items{
+    flex: 1;
+}
+.cart-items-action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.cart-item input{
+    flex: 0.1;
+}
+.product-img{
+    flex: 0.4;
+    width: 15rem;
+    height: 10rem;
+}
+.car-items-description{
+    flex: 0.3;
+}
+.cart-item-shipping{
+    margin-top: .5rem;
+    color: red;
+}
+.cart-btn-action{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cart-btn-ac{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem .5rem;
+
+}
+.cart__prament{
+    flex: 1;
+}
+.cart__prament-summery > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+}
+.cart__prament-btn{
+    width: 100%;
+}
+.cart__method h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.cart__method > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+/* cart section ends here  */
+/* main ends here  */
+
+
+
+
+
+
+/* footer starts here  */
+.footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    min-height: 10vh;
+    color: white;
+    font-size: 1.1rem;
+}
+.btn-subscribe{
+    margin-left: -5px;
+}
+.footr-input{
+    border: none;
+    padding: var(--padding);
+    width:20rem;
+}
+/* footer ends here  */
+@media (max-width: 992px){
+ .flex-center {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    .actions{
+        display: flex;
+    }
+    .products{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+    }
+    .cart__item, .cart__prament{
+        width: 90%;
+    }
+}
+@media (max-width: 768px){
+    .flex-space-around, .flex-center {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    .prifile-icon{
+        width: 4rem;
+        height: 4rem;
+    }
+    #menu-icon {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    /* .footer-desc{
+        
+    } */
+    .actions{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-subscribe{
+        width:10rem;
+    }
+    .header{
+        width: 100%;
+        min-height: 90vh;
+    }
+    .features{
+        min-height:95%;
+    }
+    .banner-title{
+        font-size: 2rem;
+        min-height:3.5rem;
+    }
+    .footer{
+        min-height: auto;
+    }
+    .products{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    .proudct-btn{
+        width:15rem;
+        border-radius: 6px;
+        margin-left: 10rem;
+    }
+    .proudct-btn:hover{
+        color: white;
+    }
+}
+@media (max-width:600px){
+    
+} 

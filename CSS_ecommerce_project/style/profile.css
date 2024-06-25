@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:3rem;
+}
+.profile .cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto ;
+    padding:1rem;
+    width: 30rem;
+    gap: 1rem;
+}
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    border:2px solid;
+}
+.profile-button{
+    background-color: transparent;
+    
+}
+.profile-button{
+        border:none;
+        background-color: transparent;
+}

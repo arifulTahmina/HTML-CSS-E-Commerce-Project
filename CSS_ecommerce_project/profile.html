@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS ecommerce project">
+    <meta name="keywords" content="E-commerce,ecommerce,project">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/432fcf2f1b.js" crossorigin="anonymous"></script>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <title>CSS ecommerce project</title>
+    <link rel="stylesheet" href="./style/profile.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header starts here  -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav-link">
+                    Register
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav-link">
+                    Loging
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" class="nav-link">
+                    <img src="./images/download.jfif" alt="nav-upper"
+                    class="prifile-icon">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a href="#" class="nav-link nav-brand">
+                    Arif Express
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav-link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span> 
+                    Cart 2 product -$21.36
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- header ends here  -->
+
+    <main>
+        <section class="profile">
+            <h2 class="section-titel text-center">
+                User Profile
+            </h2>
+            <div class="cart flex-center">
+                <img class="profile-img" src="./images/img-4.jpg" alt="prifile-img">
+                <h4 class="profile-name">
+                    Ariful Islam
+                </h4>
+                <h5 class="profile-email">
+                    mdrifat307618@gmail.com
+                </h5>
+                <p class="profile-disc">I love to shop different types of gadgets</p>
+                <div class="btn profile-button">
+                    <button class="profile-edit-btn">
+                        <i class="far fa-edit fa-2x"></i>
+                    </button>
+                    <button class="profile-delete-btn">
+                        <i class="fa-regular fa-trash-can fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+        <label for="Subscribe">Subscribe to newslatter  </label>
+        <input type="email" id="Subscribe" name="Subscribe" class="footr-input"
+        placeholder="Your Email Address">
+        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>&copy; Copyright 2023 Arif Express. All right rserved</div>
+    </footer>
+    <script src="./scripts/indext.js"></script>
+
+    <!-- footer ends here  -->
+
+</body>
+</html>

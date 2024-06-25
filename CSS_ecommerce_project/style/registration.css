@@ -1,0 +1,142 @@
+:root {
+    --primary-color:rgb(11, 181, 48);
+    --secondary-color:rgba(36, 122, 55, .9);
+    --padding:0.5rem;
+    --transition: all 0.3s;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.5) ;
+}
+/* Registration & Loging section starts here  */
+.text-center{
+    text-align: center;
+}
+.register, .loging{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+
+}
+.register .cart,
+.loging .cart{
+    width: 50rem;
+    border-radius:6px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    padding: 1.5rem .5rem;
+
+
+}
+.form-control label{
+    flex: 0.1;
+    text-align: left;
+}
+.form-control input,
+textarea{
+    flex: 0.9;
+    padding:.4rem 0;
+    border: 1px solid black;
+    border-radius: 6px
+}
+.form-control textarea{
+    resize: none;
+    height:12vh;
+}
+/* Registration & Loging section ends here  */
+/* contac section starts here  */
+    .contact-container{   
+        flex: 1;
+        display: flex;
+        gap:3rem;
+    }
+    .section-titel{
+        margin-bottom: 3rem;
+    }
+    .form{
+        flex: 0.5;
+        display: flex;
+    }
+    
+    .contact-addarss{
+        display: flex;
+        flex:0.5;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .address-iframe{
+        width:30rem;
+    }
+/* contac section ends here  */
+@media (max-width:992px){
+    
+    .register .cart,
+    .loging .cart{
+        width:100%;
+        border-radius:6px;
+    }
+    .form-control{
+     width:100%;
+    }
+    .form-control input,
+    textarea{
+        width:70%;
+        
+    }
+    .form-control{
+        width:80%;
+        flex-direction: row;
+    }
+    
+    
+}
+
+@media (max-width:760px){
+    .register .cart, .loging .cart{
+        width:100%;
+        border-radius:6px;
+    }
+    .form-control {
+     flex-direction: row;
+     width:100%;
+     
+    }
+    .form-control input,
+    textarea{
+    border: 1px solid black;
+    border-radius:2px;
+    width:90%;
+    
+}
+
+
+
+}
+@media (max-width:600px){
+    .register,
+    .loging{
+     min-height:auto;
+    
+    }
+    .register .cart, .loging .cart{
+        width:70%;
+        border-radius:6px;
+    }
+    .form-control {
+     flex-direction: row;
+     width:100%;
+     padding: 0;
+    }
+    .form-control input,
+    textarea{
+    border: 1px solid black;
+    border-radius:2px;
+    
+}
+
+}

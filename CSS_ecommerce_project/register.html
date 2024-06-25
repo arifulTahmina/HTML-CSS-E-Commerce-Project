@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS ecommerce project">
+    <meta name="keywords" content="E-commerce,ecommerce,project">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/432fcf2f1b.js" crossorigin="anonymous"></script>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <title>CSS ecommerce project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/registration.css">
+</head>
+<body>
+    <!-- header starts here  -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav-link">
+                    Register
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav-link">
+                    Loging
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" class="nav-link">
+                    <img src="./images/download.jfif" alt="nav-upper"
+                    class="prifile-icon">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a href="#" class="nav-link nav-brand">
+                    Arif Express
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="cart.html" class="nav-link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span> 
+                    Cart 2 product -$21.36
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- header ends here  -->
+
+    <!-- Registration starts here  -->
+    <main>
+        <section class="register">
+            <h2 class="section-titel text-center">
+                User Registration
+            </h2>
+            <div class="cart">
+                <form action="" class="form">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"  required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password"  required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="About us">About Us</label>
+                        <textarea name="about us" id="about-us"></textarea>
+                    </div>
+                    <button type="submit" class="btn register-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Registration ends here  -->
+
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+        <label for="Subscribe">Subscribe to newslatter  </label>
+        <input type="email" id="Subscribe" name="Subscribe" class="footr-input"
+        placeholder="Your Email Address">
+        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>&copy; Copyright 2023 Arif Express. All right rserved</div>
+    </footer>
+    <script src="./scripts/indext.js"></script>
+    <!-- footer ends here  -->
+
+</body>
+</html>

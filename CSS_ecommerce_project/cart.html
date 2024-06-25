@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS ecommerce project">
+    <meta name="keywords" content="E-commerce,ecommerce,project">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/432fcf2f1b.js" crossorigin="anonymous"></script>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <title>CSS ecommerce project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header starts here  -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="register.html" class="nav-link">
+                    Register
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="login.html" class="nav-link">
+                    Loging
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="profile.html" class="nav-link">
+                    <img src="./images/download.jfif" alt="nav-upper"
+                    class="prifile-icon">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list">
+                <a href="#" class="nav-link nav-brand">
+                    Arif Express
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span> 
+                    Cart 2 product -$21.36
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- header ends here  -->
+    <main>
+        <div class="cart flex-center">
+            <div class="cart__items">
+                <div class="cart cart-items-heading">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="cart-items-action">
+                        <label for="seclect">
+                            <input type="checkbox" name="seclect" id="">
+                        </label>
+                        <button class="btn"> <i class="fa-regular fa-trash-can"></i></button>
+                        <button class="btn">Shop More</button>
+                    </div>
+                    <div class="cart cart-item flex-space-around">
+                        <input type="checkbox" name="" id="">
+                        <img src="./images/product-1.jpg" alt="product-1" class="product-img">
+                        <div class="car-items-description">
+                            <h3 class="product-n">Sony V-4 Headphone</h3>
+                            <h4 class="product-price">Price: $25.69</h4>
+                            <p class="cart-item-shipping">Free Shipping</p>
+                        </div>
+                        <div class="cart-btn-action">
+                            <button class="btn"><i class="fa-regular fa-trash-can"></i></button>
+                           <div class="cart-btn-ac" >
+                            <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                            2
+                            <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                           </div>
+                        </div>
+                        
+                    </div>
+                    <div class="cart cart-item flex-space-around">
+                        <input type="checkbox" name="" id="">
+                        <img src="./images/product-1.jpg" alt="product-1" class="product-img">
+                        <div class="car-items-description">
+                            <h3 class="product-n">Sony V-4 Headphone</h3>
+                            <h4 class="product-price">Price: $25.69</h4>
+                            <p class="cart-item-shipping">Paid Shipping</p>
+                        </div>
+                        <div class="cart-btn-action">
+                            <button class="btn"><i class="fa-regular fa-trash-can"></i></button>
+                           <div class="cart-btn-ac" >
+                            <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                                4
+                            <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                           </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="cart__prament">
+                <div class="cart__prament-summery cart">
+                    <h2>Cart Prament Summery</h2>
+                    <div>
+                        <p>Subtotal:</p>
+                        <p>$335.50</p>
+                    </div>
+                    <div>
+                        <p>Shipping:</p>
+                        <p>$2.99</p>
+                    </div>
+                    <div>
+                        <p>Total Cost:</p>
+                        <p>$344.99</p>
+                    </div>
+                    <button class="btn cart__prament-btn">
+                        Pay Now
+                    </button>
+                </div>
+                <div class="cart__method cart">
+                    <h2>Prament Method</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-3x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-amex fa-3x"></i>
+                        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+                   
+    </main>
+    <!-- footer starts here  -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+        <label for="Subscribe">Subscribe to newslatter  </label>
+        <input type="email" id="Subscribe" name="Subscribe" class="footr-input"
+        placeholder="Your Email Address">
+        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>&copy; Copyright 2023 Arif Express. All right rserved</div>
+    </footer>
+    <script src="./scripts/indext.js"></script>
+    <!-- footer ends here  -->
+
+</body>
+</html>
